@@ -19,6 +19,7 @@
 提交数据 : git push
 
 回滚到指定版本 : git reset --hard xxx
+强推到远程分支 : git push -u origin master -f (origin：远程仓库名  master：分支名称  -f：force，意为强制、强行)
 
 
 2.常用操作顺序
@@ -109,5 +110,13 @@ git push origin :refs/tags/v3.0.1     删除远程标签 v3.0.1
     git commit -m "注释语句"
     git remote add origin https://***.git(新git地址)
     git pull origin master
+    
+    git pull origin master --allow-unrelated-histories
 
     git push -u origin master
+
+
+
+文件显示忽略文件：
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+
